@@ -3,8 +3,7 @@
 console.log(
     'This script populates some test books, authors, genres and bookinstances to your database. Specified database as argument - e.g.: node populatedb "mongodb+srv://cooluser:coolpassword@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority"'
   );
-  console.log("Debug: __dirname =", __dirname);
-console.log("Debug: Current working directory =", process.cwd());
+ 
 
   
   // Get arguments passed on command line
@@ -13,8 +12,7 @@ console.log("Debug: Current working directory =", process.cwd());
   const Book = require("./models/book");
   const Author = require("./models/author");
   const Genre = require("./models/genre");
-  const BookInstance = require("./models/bookinstance");
-  
+  const BookInstance = require("./express-local-lib/models/bookinstance");
   const genres = [];
   const authors = [];
   const books = [];
