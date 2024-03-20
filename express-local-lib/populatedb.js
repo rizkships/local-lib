@@ -12,7 +12,7 @@ console.log(
   const Book = require("./models/book");
   const Author = require("./models/author");
   const Genre = require("./models/genre");
-  const BookInstance = require("./express-local-lib/models/bookinstance");
+  const BookInstance = require("./models/bookinstance");
   const genres = [];
   const authors = [];
   const books = [];
